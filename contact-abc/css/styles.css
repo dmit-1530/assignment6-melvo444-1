@@ -6,3 +6,104 @@ body {
 .container {
     padding: 0 1rem;
 }
+
+h2 {
+    font-size: 1.75rem;
+    border-left: .3125rem solid #CB4E0B;
+    border-bottom: .1875rem solid #CB4E0B;
+    padding-left: .25rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+legend {
+    margin-bottom: .5rem;
+}
+
+form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: red;
+    padding: 2rem 1rem;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 70%;
+}
+
+form label:not(input[type="radio"] + label, input[type="checkbox"] + label) {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    line-height: 1.5;
+}
+
+form input:not([type="radio"], [type="checkbox"], [type="submit"]),
+select,
+textarea {
+    border: 1px solid #C1C4C8;
+    border-radius: 0.5rem;
+    height: 3.25rem;
+    padding: .75rem 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+form fieldset div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+form fieldset label {
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid #c1c4c8;
+    cursor: pointer;
+    flex-grow: 1;
+    /* flex-basis: calc((37rem - 100%) * 999); */
+    min-inline-size: min(100%, 10rem);
+    max-inline-size: 100%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+form textarea {
+    max-height: 16rem;
+    min-height: 5rem;
+    resize: vertical;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 2.5rem;
+    padding: 0;
+}
+
+span {
+    margin-right: 1rem;
+}
+
+fieldset label:has(input[type="radio"]:checked) {
+    background-color: #CB4E0B;
+    color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #C2410C;
+    border: none;
+    border-radius: 0.5rem;
+    color: #F5F5F5;
+    cursor: pointer;
+    padding: 1.125rem;
+    box-shadow: 0px 2px 2px #D6E2EF;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #EA580C;
+}
