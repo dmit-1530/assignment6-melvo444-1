@@ -12,6 +12,7 @@ h2 {
     border-left: .3125rem solid #CB4E0B;
     border-bottom: .1875rem solid #CB4E0B;
     padding-left: .25rem;
+    margin-top: 3rem;
     margin-bottom: 1.5rem;
 }
 
@@ -26,8 +27,6 @@ legend {
 
 form {
     background-color: white;
-    border-radius: 8px;
-    box-shadow: red;
     padding: 2rem 1rem;
     flex-basis: 0;
     flex-grow: 999;
@@ -64,7 +63,7 @@ form fieldset label {
     border: 1px solid #c1c4c8;
     cursor: pointer;
     flex-grow: 1;
-    /* flex-basis: calc((37rem - 100%) * 999); */
+    flex-basis: calc((37rem - 100%) * 999);
     min-inline-size: min(100%, 10rem);
     max-inline-size: 100%;
     white-space: nowrap;
@@ -106,4 +105,23 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #EA580C;
+}
+
+@media (min-width: 960px) {
+    .container {
+        display: flex;
+        gap: 2.5rem;
+    }
+     header {
+        flex: 0 0 30%;
+    }
+     
+}
+ 
+@media (min-width: 960px) {
+        .container {
+        padding: 0;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
